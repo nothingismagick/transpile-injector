@@ -1,0 +1,44 @@
+{
+  "name": "transpile-injector",
+  "version": "1.0.0",
+  "description": "Modify js files in place using object syntax but apply via the AST",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nothingismagick/transpile-injector.git"
+  },
+  "keywords": [
+    "AST",
+    "babel",
+    "transpiler",
+    "injection"
+  ],
+  "author": "Daniel Thompson-Yvetot <denjell@quasar.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nothingismagick/transpile-injector/issues"
+  },
+  "homepage": "https://github.com/nothingismagick/transpile-injector#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/generator": "^7.5.5",
+    "@babel/parser": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@babel/template": "^7.4.4",
+    "@babel/traverse": "^7.5.5",
+    "execa": "^2.0.3",
+    "fs-extra": "^8.1.0",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "husky": "^3.0.3"
+  },
+  "engines": {
+    "node": ">= 10.16.2",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.17.3"
+  }
+}
