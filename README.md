@@ -5,7 +5,7 @@ Early Preview.
 
 ## Install
 ```
-$ yarn add transpileInjector
+$ yarn add transpile-injector
 ```
 
 Import and use:
