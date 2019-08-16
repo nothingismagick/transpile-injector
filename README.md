@@ -39,15 +39,15 @@ const { transpileInjector } = require('transpile-injector')
  *    })
  *
  *    // async
- *    const exit = await transpileInjector(options, inpath, outpath, injection)
+ *    const exit = await transpileInjector(opts, inpath, outpath, injection)
  *
  * @param {string} inFile - original file path prepared for OS
  * @param {string} outFile - target filepath prepared for OS
  * @param {(object|string)} injection - object to inject
- * @param {Object} options
- * @param {string} options.strategy - [merge|skip]
- * @param {string} options.baseType - ensure node type
- * @param {boolean} options.strict - process.exit(1) on any error
+ * @param {Object} opts
+ * @param {string} opts.strategy - [merge|skip]
+ * @param {string} opts.baseType - ensure node type
+ * @param {boolean} opts.strict - process.exit(1) on any error
  * @returns {Promise<{errMsg: *, exitCode: number}>}
  */
  ```

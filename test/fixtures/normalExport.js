@@ -5,7 +5,12 @@ module.exports = function () {
       two: 'three',
       three: '"four"'
     },
-    string: 'notAstring',
-    array: ['thong', 'theng', 'thyng']
+    string3: 'sdfsfsdfsdfdfgddfgfsdfsdfsdfsdfsdf',
+    array: [
+      'thong',
+      'thing',
+      'thung'
+    ],
+    array2: []
   }
 }

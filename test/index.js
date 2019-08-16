@@ -1,24 +1,25 @@
 const { transpileInjector } = require('../')
 const path = require('path')
 
-const infile = path.join('./test/fixtures/normalExport.js')
-const outfile = path.join('./test/tmp/normalExport.js')
+const input = path.join('./test/fixtures/normalExport.js')
+const output = path.join('./test/tmp/normalExport.js')
 const injection = {
   object: {
-    one: 1,
+    one: 2,
     two: 'two',
     three: '"three"'
   },
-  string: 'string',
-  array: ['thing', 'thang', 'thung']
+  array: [
+    'thong',
+    'thing',
+    'thung'
+  ]
 }
-const options = {
-  strategy: 'merge',
-  baseType: 'ReturnStatement',
-  strict: false
+const opts = {
+  log: false,
+  strict: true
 }
-
-transpileInjector(infile, outfile, injection, options).then(msg => {
+transpileInjector(input, output, injection, opts).then(msg => {
   if (!msg.exitCode === 0) {
     console.log(msg.errMsg)
   } else {
